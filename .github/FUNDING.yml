@@ -1,0 +1,31 @@
+# GitHub Sponsors funding configuration
+# Documentation: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button
+
+# GitHub Sponsors username (replace with your GitHub username when you set up GitHub Sponsors)
+# github: yashab-cyber
+
+# Patreon username
+# patreon: username
+
+# Open Collective username
+# open_collective: username
+
+# Ko-fi username
+# ko_fi: username
+
+# Tidelift package name
+# tidelift: npm/package-name
+
+# Community Bridge project name
+# community_bridge: project-name
+
+# Liberapay username
+# liberapay: username
+
+# IssueHunt username
+# issuehunt: username
+
+# Custom funding URLs (up to 4)
+custom:
+  - "https://github.com/yashab-cyber/vulnmind/blob/main/DONATE.md"
+  - "mailto:yashabalam707@gmail.com?subject=[DONATION]%20VulnMind%20Support"
