@@ -1,0 +1,41 @@
+{
+  "max_concurrent_requests": 10,
+  "request_timeout": 30,
+  "user_agent": "VulnMind/1.0",
+  "default_scan_depth": "medium",
+  "follow_redirects": true,
+  "verify_ssl": true,
+  
+  "ai_enabled": false,
+  "openai_api_key": null,
+  "ai_model": "gpt-4",
+  "ai_temperature": 0.1,
+  
+  "learning_rate": 0.1,
+  "adaptation_threshold": 0.7,
+  "memory_size": 1000,
+  "confidence_threshold": 0.5,
+  
+  "enabled_plugins": [],
+  "disabled_plugins": [],
+  "plugin_configs": {
+    "sql_injection": {
+      "max_payloads": 50,
+      "custom_payloads": []
+    },
+    "xss": {
+      "max_payloads": 30,
+      "check_dom": true
+    },
+    "csrf": {
+      "check_forms": true,
+      "check_ajax": true
+    }
+  },
+  
+  "log_level": "INFO",
+  "log_file": null,
+  
+  "default_report_format": "json",
+  "report_directory": "./reports"
+}

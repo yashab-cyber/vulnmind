@@ -1,0 +1,44 @@
+# VulnMind Configuration File Example
+# Copy this to vulnmind.yml and customize for your needs
+
+# Scanning Configuration
+max_concurrent_requests: 10  # Number of concurrent HTTP requests
+request_timeout: 30          # HTTP request timeout in seconds
+user_agent: "VulnMind/1.0"   # User agent string
+default_scan_depth: "medium" # Scan depth: basic, medium, deep
+follow_redirects: true       # Follow HTTP redirects
+verify_ssl: true            # Verify SSL certificates
+
+# AI Configuration
+ai_enabled: false           # Enable AI-powered analysis
+openai_api_key: null        # OpenAI API key (or set OPENAI_API_KEY env var)
+ai_model: "gpt-4"          # AI model to use
+ai_temperature: 0.1         # AI temperature (0.0-2.0)
+
+# Self-Awareness Configuration
+learning_rate: 0.1          # Learning rate for adaptation
+adaptation_threshold: 0.7   # Threshold for triggering adaptation
+memory_size: 1000          # Size of learning memory
+confidence_threshold: 0.5   # Minimum confidence for reporting vulnerabilities
+
+# Plugin Configuration
+enabled_plugins: []         # List of explicitly enabled plugins (empty = all)
+disabled_plugins: []        # List of disabled plugins
+plugin_configs:            # Plugin-specific configurations
+  sql_injection:
+    max_payloads: 50
+    custom_payloads: []
+  xss:
+    max_payloads: 30
+    check_dom: true
+  csrf:
+    check_forms: true
+    check_ajax: true
+
+# Logging Configuration
+log_level: "INFO"          # Log level: DEBUG, INFO, WARNING, ERROR, CRITICAL
+log_file: null             # Log file path (null = console only)
+
+# Report Configuration
+default_report_format: "json"  # Default report format: json, html
+report_directory: "./reports"   # Directory for saving reports

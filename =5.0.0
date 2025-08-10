@@ -1,0 +1,5 @@
+Collecting chardet
+  Downloading chardet-5.2.0-py3-none-any.whl.metadata (3.4 kB)
+Downloading chardet-5.2.0-py3-none-any.whl (199 kB)
+Installing collected packages: chardet
+Successfully installed chardet-5.2.0
